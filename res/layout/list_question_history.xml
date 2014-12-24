@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:descendantFocusability="blocksDescendants" >
+    
+    <TextView 
+        android:id="@+id/txtQuestionLH"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="@string/question_hint"
+        android:focusable="false"
+	    android:focusableInTouchMode="false"
+        />
+    
+	<LinearLayout 
+	    android:id="@+id/lnrQuestionLH"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_below="@id/txtQuestionLH"
+	    android:layout_margin="10dp"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:descendantFocusability="blocksDescendants"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/txtOptALH"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:text="@string/opta"
+	        android:focusable="false"
+	    android:focusableInTouchMode="false"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/txtOptBLH"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:text="@string/optb"
+	        android:focusable="false"
+	    android:focusableInTouchMode="false"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/txtOptCLH"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:text="@string/optc"
+	        android:focusable="false"
+	    android:focusableInTouchMode="false"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/txtOptDLH"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:text="@string/optd"
+	        android:focusable="false"
+	    android:focusableInTouchMode="false"
+	        />
+	    
+	</LinearLayout>
+	
+	<ImageView 
+	    android:id="@+id/imgDel"
+	    android:layout_height="20dp"
+	    android:layout_width="20dp"
+	    android:src="@drawable/delete"
+	    android:layout_below="@id/lnrQuestionLH"
+	    android:layout_margin="10dp"
+	    android:layout_alignParentRight="true"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+		android:contentDescription="@string/hello_world"
+	    />
+	
+	<ImageView 
+	    android:id="@+id/imgEdit"
+	    android:layout_height="20dp"
+	    android:layout_width="20dp"
+	    android:src="@drawable/edit"
+	    android:layout_below="@id/lnrQuestionLH"
+	    android:layout_toLeftOf="@id/imgDel"
+	   	android:layout_margin="10dp"
+		android:contentDescription="@string/hello_world"
+		android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    />
+	
+	<ImageView 
+	    android:id="@+id/imgShare"
+	    android:layout_height="20dp"
+	    android:layout_width="20dp"
+	    android:src="@drawable/share"
+	    android:layout_below="@id/lnrQuestionLH"
+	    android:layout_toLeftOf="@id/imgEdit"
+	    android:layout_margin="10dp"
+		android:contentDescription="@string/hello_world"
+		android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    />
+
+</RelativeLayout>

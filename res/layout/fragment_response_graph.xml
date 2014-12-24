@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <RelativeLayout 
+        android:id="@+id/rlayoutR"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/relativelayout_rectangle">
+        
+        <ImageView 
+            android:id="@+id/imgCloseR"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:src="@drawable/close"
+            android:contentDescription="@string/hello_world"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            />
+        
+        <TextView 
+        android:id="@+id/txtResponseGraphR"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/imgClose"
+        android:layout_alignParentLeft="true"
+        android:text="fasfjafkjasdjkfask"
+        android:layout_margin="10dp"/>
+        
+        <LinearLayout 
+            android:id="@+id/lnrQuestionGraphR"
+            android:layout_height="wrap_content"
+          	android:layout_width="match_parent"
+          	android:layout_below="@id/txtQuestionGraph"
+          	android:layout_margin="30dp"
+          	android:orientation="vertical"
+            >
+            
+            <RadioButton
+                android:id="@+id/txtOptAGR"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="kflkdlfk"
+                android:ellipsize="end"
+                android:layout_margin="10dp"
+                />
+            
+            <RadioButton
+                android:id="@+id/txtOptBGR"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="kflkdlfk"
+                android:ellipsize="end"
+                android:layout_margin="10dp"
+                />
+            
+            <RadioButton 
+                android:id="@+id/txtOptCGR"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="kflkdlfk"
+                android:ellipsize="end"
+                android:layout_margin="10dp"
+                />
+            
+            <RadioButton
+                android:id="@+id/txtOptDGR"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="kflkdlfk"
+                android:ellipsize="end"
+                android:layout_margin="10dp"
+                />
+            
+        </LinearLayout>
+        
+         <Button 
+	    android:id="@+id/btnResponseR"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="10dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:text="Submit"
+	    />
+
+</RelativeLayout>
+</RelativeLayout>
